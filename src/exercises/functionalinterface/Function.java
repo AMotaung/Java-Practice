@@ -13,6 +13,7 @@ public class Function {
 
         int multiply = multiplyBy10Function.apply(increment2);
         System.out.println(multiply);
+ 
         java.util.function.Function<Integer,Integer> addBy1AndThenMultiplyBy10 = incrementByOneFunction.andThen(multiplyBy10Function);
         System.out.println(addBy1AndThenMultiplyBy10.apply(4));
 
